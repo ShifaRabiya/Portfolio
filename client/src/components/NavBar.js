@@ -3,9 +3,12 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import navIcon1 from '../assets/img/navIcon1.png';
 import navIcon2 from '../assets/img/navIcon2.png';
 
+
+
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
+
 
     useEffect(() => {
         const onScroll = () => {
@@ -27,10 +30,8 @@ export const NavBar = () => {
     return(
     <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
         <Container>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" >
-                <span className="navbar-toggle-icon"></span>
-            </Navbar.Toggle>
-            <Navbar.Collapse id="basic-navbar-nav">
+            <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+            <Navbar.Collapse id="basic-navbar-nav" className="mobile-menu">
             <Nav className="me-auto">
                 <Nav.Link
                     href="#home"

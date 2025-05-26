@@ -509,6 +509,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   display: block;
 }
 
+/* Optional: Add responsive adjustments */
+@media (max-width: 768px) {
+  .proj-imgbx {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .proj-imgbx img {
+    height: auto;
+  }
+
+  .proj-imgbx:hover::before {
+    height: 100%; /* or you can reduce the height to something like 50% for less intrusive effect */
+  }
+}
+
 .proj-imgbx::before{
   content: "";
   background: linear-gradient(98.21deg, #ad28a7 -5.91%, #1e2db8 111.58%);

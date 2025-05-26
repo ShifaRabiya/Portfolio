@@ -53,6 +53,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
+    border-bottom: 2px solid #ffffff;
 }
 span.navbar-text {
     display: flex;

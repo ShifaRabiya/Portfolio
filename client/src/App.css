@@ -167,9 +167,9 @@ nav.navbar .navbar-toggler:focus{
 nav.navbar .navbar-toggler-icon{
   width: 24px;
   height: 17px;
-  background-image: none;
+  /*background-image: none;*/
   position: relative;
-  border-bottom: 2px solid #fff;
+  /*border-bottom: 2px solid #fff;*/
   transition: all 300ms linear;
   top: -2px;
 }
@@ -243,6 +243,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
     opacity: 0.85;
     padding: 20px;
     border-radius: 0 0 12px 12px;
+  }
+
+  nav.navbar {
+    background-color: #121212 !important;
+    padding: 18px 0;
   }
 
   .navbar-text {

@@ -280,26 +280,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
 
 /* Responsive styles for tablets and phones */
 @media (max-width: 768px) {
-  .banner .tagline {
-    font-size: 16px;
-    padding: 6px 8px;
-    border-radius: 20px;
-  }
-
-  .banner h1 {
-    font-size: 36px;
-    line-height: 1.2;
-  }
-
-  .banner p {
-    font-size: 16px;
-    width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
   .banner h1 {
     font-size: 40px;
+    line-height: 1.2;
   }
 }
 

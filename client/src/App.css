@@ -240,6 +240,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
 @media (max-width: 991px) {
   .mobile-menu {
     background-color: #121212; /* or any color you like */
+    opacity: 0.85;
     padding: 20px;
     border-radius: 0 0 12px 12px;
   }

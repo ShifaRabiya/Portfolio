@@ -521,6 +521,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   letter-spacing: 0.8px;
 }
 
+@media (max-width: 600px) {
+  .proj-txtx h4 {
+    font-size: 22px;
+  }
+
+  .proj-txtx span {
+    font-size: 13px;
+  }
+}
+
 /*Contact*/
 
 .contact {

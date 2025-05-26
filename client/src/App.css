@@ -249,7 +249,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   }
 
   .navbar-text {
-    display: flex;
+    display: flex !important;
     justify-content: flex-end;
     align-items: center;
     width: 100%;
@@ -257,7 +257,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   }
 
   .social-icon {
-    display: flex;
+    display: flex !important;
     gap: 12px;
   }
 

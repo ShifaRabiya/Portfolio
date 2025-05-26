@@ -235,6 +235,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   color: #ffffff !important;
   border-bottom: 2px solid #ffffff;
 }
+
+span.navbar-text {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* ADD THIS LINE to push it to the right in desktop */
+  gap: 16px;          /* Optional: adds spacing between elements */
+}
+
 @media (max-width: 991px) {
   .navbar-text {
     display: flex;

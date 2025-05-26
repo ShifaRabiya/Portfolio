@@ -323,43 +323,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   width: 96%;
 }
 
-/* Responsive styles for tablets and phones */
-@media (max-width: 991px) {
-  nav.navbar {
-    background-color: #121212 !important;
-    padding: 12px 20px;
-  }
-
-  .navbar-brand,
-  .navbar-nav,
-  .navbar-toggler {
-    display: none !important;
-  }
-
-  .navbar-text {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .social-icon {
-    display: flex;
-    gap: 10px;
-  }
-
-  .social-icon a img {
-    width: 22px;
-    height: 22px;
-  }
-
-  .navbar-text .vvd {
-    padding: 6px 12px;
-    font-size: 14px;
-  }
-}
-
-
 .txt-rotate > .wrap1{
   border-right: 0.08em solid #666;
 }

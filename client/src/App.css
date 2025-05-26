@@ -236,46 +236,49 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   border-bottom: 2px solid #ffffff;
 }
 
-span.navbar-text {
-  display: flex;
-  align-items: center;
-  margin-left: auto; /* ADD THIS LINE to push it to the right in desktop */
-  gap: 16px;          /* Optional: adds spacing between elements */
-}
-
 @media (max-width: 991px) {
-  .navbar-text {
+  nav.navbar {
+    background-color: #121212 !important;
+    padding: 12px 20px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
-    gap: 16px;
+  }
+
+  .navbar-nav {
+    display: none; /* ❌ Hide the nav menu */
+  }
+
+  .navbar-toggler {
+    display: none; /* ❌ Hide the hamburger icon */
+  }
+
+  .navbar-brand {
+    display: none; /* Optional: hide logo if needed */
+  }
+
+  .navbar-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbar-text .vvd {
+    padding: 6px 12px;
+    font-size: 14px;
   }
 
   .social-icon {
     display: flex;
-    gap: 12px;
+    gap: 8px;
   }
 
   .social-icon a img {
     width: 24px;
     height: 24px;
   }
-
-  .navbar {
-    background-color: #121212 !important;
-    padding: 12px 20px;
-  }
-
-  .navbar-text .vvd {
-    padding: 6px 14px;
-    font-size: 14px;
-  }
-
-  .navbar-toggler {
-    display: none; /* Hide hamburger */
-  }
 }
+
 
 
 

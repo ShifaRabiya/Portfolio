@@ -237,23 +237,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
 }
 
 /* Mobile-only adjustments */
+/* Mobile view only */
 @media (max-width: 991px) {
-  .navbar-nav {
-    display: none !important; /* Hide menu links */
+  .navbar-nav,
+  .navbar-toggler {
+    display: none !important; /* Hide menu and hamburger */
   }
 
   .navbar-text {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
-    padding: 10px 0;
+    gap: 16px;
   }
 
   .social-icon {
     display: flex;
-    justify-content: center;
-    gap: 16px;
+    gap: 12px;
   }
 
   .social-icon a img {
@@ -261,14 +262,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
     height: 24px;
   }
 
-  .navbar-text .vvd {
-    display: none; /* Hide the "Let's Connect" button if not needed */
+  .navbar {
+    background-color: #121212 !important; /* Always visible background */
+    padding: 10px 20px;
   }
 
-  .navbar {
-    background-color: #121212 !important; /* Optional: solid background */
+  .navbar-text .vvd {
+    padding: 6px 14px;
+    font-size: 14px;
   }
 }
+
 
 
 /*Banner*/

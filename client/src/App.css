@@ -170,7 +170,7 @@ nav.navbar .navbar-toggler-icon{
   background-image: none;
   position: relative;
   border-bottom: 2px solid #fff;
-  filter: brightness(0) invert(1);
+  color: #fff;
   transition: all 300ms linear;
   top: -2px;
 }

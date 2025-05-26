@@ -50,10 +50,12 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-size: 18px;
   opacity: 0.75;
 }
-nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
-nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover {
     opacity: 1;
-    border-bottom: 2px solid #ffffff;
+}
+nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+  opacity: 1;
+  border-bottom: 2px solid #ffffff;
 }
 span.navbar-text {
     display: flex;

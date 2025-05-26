@@ -47,7 +47,7 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                     <span className="tagline">Welcome to my Portfolio</span>
                     <h1>{`Hi I'm Shifa `}<span className="wrap">{text}</span></h1>
-                    <p>I enjoy the process of bringing structure to ideas — whether through clean code, thoughtful design, or creative visuals. With a growing background in both development and design, I aim to create work that’s not just functional, but memorable.</p>
+                    <p>I enjoy turning ideas into structured, memorable experiences — through clean code, thoughtful design, and creative visuals.</p>
                     </Col >
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Img"/>

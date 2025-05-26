@@ -31,6 +31,14 @@ export const NavBar = () => {
     <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
         <Container>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+            <span className="navbar-text">
+                <div className="social-icon">
+                    <a href="https://www.linkedin.com/in/shifa-rabiya-4871b2255" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="Linkedin"/></a>
+                    <a href="https://github.com/ShifaRabiya" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="GitHub"/></a>
+                </div>
+                <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span>
+                </button>
+            </span>
             <Navbar.Collapse id="basic-navbar-nav" className="mobile-menu">
             <Nav className="me-auto">
                 <Nav.Link
@@ -55,14 +63,7 @@ export const NavBar = () => {
                 Projects
             </Nav.Link>
             </Nav>
-            <span className="navbar-text">
-                <div className="social-icon">
-                    <a href="https://www.linkedin.com/in/shifa-rabiya-4871b2255" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="Linkedin"/></a>
-                    <a href="https://github.com/ShifaRabiya" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="GitHub"/></a>
-                </div>
-                <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span>
-                </button>
-            </span>
+            
             </Navbar.Collapse>
         </Container>
         </Navbar>

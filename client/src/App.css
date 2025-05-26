@@ -235,21 +235,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   color: #ffffff !important;
   border-bottom: 2px solid #ffffff;
 }
-
-/* Mobile-only adjustments */
-/* Mobile view only */
 @media (max-width: 991px) {
-  
-  .navbar-toggler {
-    display: none !important; /* Hide menu and hamburger */
-  }
-
-  .navbar-collapse {
-    display: none !important; /* Hide the collapsed nav links */
-  }
-
   .navbar-text {
-    display: flex !important;
+    display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 100%;
@@ -257,7 +245,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   }
 
   .social-icon {
-    display: flex !important;
+    display: flex;
     gap: 12px;
   }
 
@@ -267,13 +255,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   }
 
   .navbar {
-    background-color: #121212 !important; /* Always visible background */
-    padding: 10px 20px;
+    background-color: #121212 !important;
+    padding: 12px 20px;
   }
 
   .navbar-text .vvd {
     padding: 6px 14px;
     font-size: 14px;
+  }
+
+  .navbar-toggler {
+    display: none; /* Hide hamburger */
   }
 }
 

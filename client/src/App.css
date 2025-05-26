@@ -239,9 +239,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
 /* Mobile-only adjustments */
 /* Mobile view only */
 @media (max-width: 991px) {
-  .navbar-nav,
+  
   .navbar-toggler {
     display: none !important; /* Hide menu and hamburger */
+  }
+
+  .navbar-collapse {
+    display: none !important; /* Hide the collapsed nav links */
   }
 
   .navbar-text {

@@ -167,10 +167,8 @@ nav.navbar .navbar-toggler:focus{
 nav.navbar .navbar-toggler-icon{
   width: 24px;
   height: 17px;
-  /*background-image: none;*/
+  background-image: url(""data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"");
   position: relative;
-  /*border-bottom: 2px solid #fff;*/
-  filter: brightness(0) invert(1);
   transition: all 300ms linear;
   top: -2px;
 }

@@ -9,7 +9,7 @@ export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
     const [expanded, setExpanded] = useState(false); // NEW: track toggle
-    const navRef = useRef(); // NEW: ref for navbar
+    const navRef = useRef(null); // NEW: ref for navbar
 
 
     useEffect(() => {
@@ -40,6 +40,7 @@ export const NavBar = () => {
 
        const onUpdateActiveLink = (value) => {
         setActiveLink(value);
+        setExpanded(false);
        } 
 
     return(

@@ -16,7 +16,6 @@ function App() {
       <Projects />
       <ProjectCards />
       <Contact />
-      <Server />
     </div>
   );
 }

@@ -44,8 +44,8 @@ export const NavBar = () => {
        } 
 
     return(
-    <Navbar expand="lg" className={scrolled ? "scrolled": "" expanded={expanded} // ✅ CONTROLLED
-      ref={navRef}}>
+    <Navbar expand="lg" className={scrolled ? "scrolled": ""} expanded={expanded} // ✅ CONTROLLED
+      ref={navRef}>
         <Container>
             <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)} />
             <Navbar.Collapse id="basic-navbar-nav" className="mobile-menu">

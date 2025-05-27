@@ -1,4 +1,4 @@
-import React, { useState,useEffect,useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import navIcon1 from '../assets/img/navIcon1.png';
 import navIcon2 from '../assets/img/navIcon2.png';
@@ -70,6 +70,13 @@ export const NavBar = () => {
                 onClick={() => onUpdateActiveLink('projects')}
                 >
                 Projects
+            </Nav.Link>
+            <Nav.Link
+                href="#contact"
+                className={`navbar-link ${activeLink === 'contact' ? 'active-navbar-link' : ''}`}
+                onClick={() => onUpdateActiveLink('contact')}
+                >
+                Contact
             </Nav.Link>
             </Nav>
             <span className="navbar-text">

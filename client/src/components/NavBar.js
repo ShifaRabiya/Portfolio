@@ -8,6 +8,8 @@ import navIcon2 from '../assets/img/navIcon2.png';
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
+    const [expanded, setExpanded] = useState(false); // NEW: track toggle
+    const navRef = useRef(); // NEW: ref for navbar
 
 
     useEffect(() => {
@@ -22,6 +24,19 @@ export const NavBar = () => {
 
         return () => window.removeEventListener("scroll", onScroll);
     }, [])
+
+      // ✅ Detect clicks outside to close menu
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (expanded && navRef.current && !navRef.current.contains(event.target)) {
+        setExpanded(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [expanded]);
+
 
        const onUpdateActiveLink = (value) => {
         setActiveLink(value);

@@ -322,64 +322,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
-/*About*/
-
-.about-section {
-  padding: 4rem 2rem;
-  background-color: #0e0e0e;
-  color: #ffffff;
-}
-
-.container {
-  max-width: 1200px;
-  margin: auto;
-}
-
-.about-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.about-text {
-  flex: 1 1 50%;
-}
-
-.about-text h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.about-text p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-}
-
-.about-details {
-  list-style: none;
-  padding: 0;
-  margin-top: 1.5rem;
-}
-
-.about-details li {
-  margin-bottom: 0.5rem;
-}
-
-.about-image {
-  flex: 1 1 40%;
-  text-align: center;
-}
-
-.about-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
-}
-
-
 /*Skills*/
 
 .skill{

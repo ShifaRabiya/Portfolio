@@ -179,43 +179,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 @media (max-width: 991px) {
-  .navbar-collapse {
-    background-color: #121212;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    margin-top: 10px;
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 20px;
-    padding: 10px;
-    color: #fff;
-    width: 100%;
-    text-align: center;
-    border-bottom: 1px solid #333;
-  }
-
-  .navbar-nav .nav-link:last-child {
-    border-bottom: none;
-  }
-
+  /* ❌ Hide the toggle button (hamburger menu) */
   .navbar-toggler {
-    margin-left: 10px;
+    display: none !important;
   }
 
+  /* ❌ Hide the collapsible nav menu */
+  .navbar-collapse {
+    display: none !important;
+  }
+
+  /* ✅ Keep right-side buttons (social icons & connect button) visible and styled */
   .navbar-text {
     position: absolute;
     top: 10px;
     right: 10px;
+    display: flex !important;
     flex-direction: row;
     gap: 10px;
+    align-items: center;
   }
 
   .social-icon {
@@ -228,6 +210,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 14px;
   }
 }
+
 
 
 /*Banner*/

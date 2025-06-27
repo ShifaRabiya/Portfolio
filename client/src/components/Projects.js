@@ -5,7 +5,7 @@ import projImg1 from "../assets/img/projImg1.png";
 import projImg2 from "../assets/img/projImg2.png";
 import projImg3 from "../assets/img/projImg3.jpg";
 import projImg4 from "../assets/img/projImg4.png";
-/*import colorsharp2 from "../assets/components/colorsharp2.png"*/
+import projImg5 from "../assets/img/projImg5.png";
 
 export const Projects = () => {
 
@@ -21,14 +21,19 @@ export const Projects = () => {
             imgUrl: projImg2,
         },
         {
-            title: "EYELIV",
-            description: "Eyewear Inventory Management System",
-            imgUrl: projImg3,
-        },
-        {
             title: "MealMate",
             description: "Hostel Mess Management System",
             imgUrl: projImg4,
+        },
+        {
+            title: "Egg Hunt",
+            description: "Egg Catcher Game",
+            imgUrl: projImg5,
+        },
+        {
+            title: "Eyeliv",
+            description: "Eyewear Inventory Management System",
+            imgUrl: projImg3,
         }
     ];
 
@@ -77,7 +82,6 @@ export const Projects = () => {
                     </Col>
                 </Row>
             </Container>
-            {/*<img className="background-image-right" src={colorsharp}></img>*/}
         </section>
         
     )

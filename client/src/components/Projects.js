@@ -30,16 +30,16 @@ export const Projects = () => {
             url: "https://mind-ease-beige-eight.vercel.app/"
         },
         {
-            title: "India Unveiled",
-            description: "Indian Culture & Heritage Website",
-            imgUrl: projImg2,
-            url: "https://india-unveiled.vercel.app/"
-        },
-        {
             title: "Egg Hunt",
             description: "Egg Catcher Game",
             imgUrl: projImg5,
             url: "https://egg-hunt-game.vercel.app/"
+        },
+        {
+            title: "India Unveiled",
+            description: "Indian Culture & Heritage Website",
+            imgUrl: projImg2,
+            url: "https://india-unveiled.vercel.app/"
         },
         {
             title: "MealMate",

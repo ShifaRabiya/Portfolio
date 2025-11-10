@@ -24,8 +24,19 @@ app.post("/contact", async (req, res) => {
   const name = `${firstName} ${lastName}`;
 
   const sendSmtpEmail = new Brevo.SendSmtpEmail();
-  sendSmtpEmail.sender = { name, email };
+
+  // ✅ Sender must be your verified Brevo email
+  sendSmtpEmail.sender = { 
+    name: "Portfolio Contact Form", 
+    email: process.env.EMAIL_TO 
+  };
+
+  // ✅ Recipient — you
   sendSmtpEmail.to = [{ email: process.env.EMAIL_TO }];
+
+  // ✅ Add visitor as reply-to
+  sendSmtpEmail.replyTo = { email };
+
   sendSmtpEmail.subject = "Contact Form Submission - Portfolio";
   sendSmtpEmail.htmlContent = `
     <p><strong>Name:</strong> ${name}</p>

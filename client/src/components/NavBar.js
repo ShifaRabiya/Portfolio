@@ -84,7 +84,16 @@ export const NavBar = () => {
                     <a href="https://www.linkedin.com/in/shifa-rabiya-4871b2255" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="Linkedin"/></a>
                     <a href="https://github.com/ShifaRabiya" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="GitHub"/></a>
                 </div>
-                <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span>
+                <button
+                className="vvd"
+                onClick={() =>
+                    window.open(
+                    'https://mail.google.com/mail/?view=cm&fs=1&to=shifarabiya09@gmail.com&su=Hello%20Shifa&body=Hi%20I%20came%20across%20your%20portfolio%20and%20wanted%20to%20connect!',
+                    '_blank'
+                    )
+                }
+                >
+                <span>Let's Connect</span>
                 </button>
             </span>
             </Navbar.Collapse>

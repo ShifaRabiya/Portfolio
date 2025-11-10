@@ -424,6 +424,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.3px;
 }
 
+@media (max-width: 768px) {
+  .nav.nav-pills .nav-link {
+    font-size: 10px;
+  }
+}
+
 /*.background-image-left{
   top: 28%;
   position: absolute;

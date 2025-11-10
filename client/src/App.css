@@ -424,7 +424,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.3px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .nav.nav-pills .nav-link {
     font-size: 10px;
   }

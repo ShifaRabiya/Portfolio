@@ -1,73 +1,70 @@
-import { Container, Row, Col } from "react-bootstrap";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import sk1 from "../assets/img/sk1.png";
-import sk2 from "../assets/img/sk2.png";
-import sk3 from "../assets/img/sk3.png";
-import sk4 from "../assets/img/sk4.png";
-import sk5 from "../assets/img/sk5.png";
-/*import colorSharp from "../assets/img/colorSharp.png";*/
+import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../App.css"; // assuming your styles go here
 
 export const Skills = () => {
-    const responsive = {
-        superLargeDesktop: {
-            breakpoint: { max: 4000, min: 3000 },
-            items: 5
-        },
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 3
-        },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 2
-        },
-        mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 1
-        }
-    };
+  return (
+    <section className="skill" id="skills">
+      <Container>
+        <Row>
+          <Col>
+            <div className="skill-bx">
+              <h2>Skills</h2>
+              <p>Technologies and tools I work with</p>
+              <Tab.Container id="skills-tabs" defaultActiveKey="first">
+                <Nav
+                  variant="pills"
+                  className="justify-content-center align-items-center"
+                >
+                  <Nav.Item>
+                    <Nav.Link eventKey="first" id="skills-tabs-tab-first">
+                      Frontend
+                    </Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link eventKey="second" id="skills-tabs-tab-second">
+                      Backend
+                    </Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link eventKey="third" id="skills-tabs-tab-third">
+                      Database
+                    </Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link eventKey="fourth" id="skills-tabs-tab-four">
+                      Tools
+                    </Nav.Link>
+                  </Nav.Item>
+                </Nav>
 
-    return (
-        <section className="skill" id="skills">
-            <Container>
-                <Row>
-                    <Col>
-                        <div className="skill-bx">
-                        <h2>
-                            Skills
-                        </h2>
-                        <Carousel responsive={responsive} infinite={true} className="skill-slider">
-                            <div className="item">
-                                <img src={sk1} alt="Image"/>
-                                <h5>HTML CSS</h5>
-                            </div>
-                            <div className="item">
-                                <img src={sk3} alt="Image"/>
-                                <h5>JavaScript</h5>
-                            </div>
-                            <div className="item">
-                                <img src={sk4} alt="Image"/>
-                                <h5>React</h5>
-                            </div>
-                            <div className="item">
-                                <img src={sk2} alt="Image"/>
-                                <h5>C#</h5>
-                            </div>
-                            <div className="item">
-                                <img src={sk2} alt="Image"/>
-                                <h5>Java</h5>
-                            </div>
-                            <div className="item">
-                                <img src={sk4} alt="Image"/>
-                                <h5>Python</h5>
-                            </div>
-                        </Carousel>
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
-            {/*<img className="background-image-left" src = {colorSharp}/>*/}
-        </section>
-    )
-}
+                <Tab.Content>
+                  <Tab.Pane eventKey="first">
+                    <div className="skills-list">
+                      React.js, JavaScript, HTML5, CSS3, TypeScript
+                    </div>
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="second">
+                    <div className="skills-list">
+                      C, Python, Java, Node.js, Express.js
+                    </div>
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="fourth">
+                    <div className="skills-list">
+                      MongoDB, MySQL
+                    </div>
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="third">
+                    <div className="skills-list">
+                      Git, GitHub, VS Code, Figma, Canva
+                    </div>
+                  </Tab.Pane>
+                </Tab.Content>
+              </Tab.Container>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+  );
+};

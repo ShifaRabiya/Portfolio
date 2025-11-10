@@ -3,37 +3,48 @@ import Nav from 'react-bootstrap/Nav'
 import {ProjectCards} from "./ProjectCards";
 import projImg1 from "../assets/img/projImg1.png";
 import projImg2 from "../assets/img/projImg2.png";
-import projImg3 from "../assets/img/projImg3.jpg";
 import projImg4 from "../assets/img/projImg4.png";
 import projImg5 from "../assets/img/projImg5.png";
+import startitup from "../assets/img/startitup.png";
+import mindease from "../assets/img/mindease.png"
 
 export const Projects = () => {
 
     const projects = [
         {
+            title: "Start It Up",
+            description: "A web portal to connect, mentor, and support student startup teams.",
+            imgUrl: startitup,
+            url: "https://startitup.brikcommunity.com"
+        },
+        {
             title: "Read-It",
             description: "Book Suggestion Website",
             imgUrl: projImg1,
+            url: "https://read-it-six.vercel.app/"
+        },
+        {
+            title: "Mind Ease",
+            description: "A mental wellness platform with mood tracking and journaling features.",
+            imgUrl: mindease,
+            url: "https://mind-ease-beige-eight.vercel.app/"
         },
         {
             title: "India Unveiled",
             description: "Indian Culture & Heritage Website",
             imgUrl: projImg2,
-        },
-        {
-            title: "MealMate",
-            description: "Hostel Mess Management System",
-            imgUrl: projImg4,
+            url: "https://india-unveiled.vercel.app/"
         },
         {
             title: "Egg Hunt",
             description: "Egg Catcher Game",
             imgUrl: projImg5,
+            url: "https://egg-hunt-game.vercel.app/"
         },
         {
-            title: "Eyeliv",
-            description: "Eyewear Inventory Management System",
-            imgUrl: projImg3,
+            title: "MealMate",
+            description: "Hostel Mess Management System",
+            imgUrl: projImg4,
         }
     ];
 

@@ -65,8 +65,7 @@ export const Banner = () => {
               {`Hi I'm Shifa `} <span className="wrap">{text}</span>
             </h1>
             <p>
-              I enjoy turning ideas into structured, memorable experiences — through
-              clean code, thoughtful design, and creative visuals.
+              Frontend Developer and Computer Science graduate passionate about turning ideas into structured, memorable web experiences through clean code and thoughtful design.
             </p>
           </Col>
           <Col xs={12} md={6} xl={5}>

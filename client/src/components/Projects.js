@@ -7,10 +7,17 @@ import projImg4 from "../assets/img/projImg4.png";
 import projImg5 from "../assets/img/projImg5.png";
 import startitup from "../assets/img/startitup.png";
 import mindease from "../assets/img/mindease.png"
+import gestura from "../assets/img/gestura.png";
 
 export const Projects = () => {
 
     const projects = [
+        {
+            title: "Gestura",
+            description: "Gesture based Gamified Learning Platform for Specially-Abled students",
+            imgUrl: gestura,
+            url: "https://gestura-indol.vercel.app/"
+        },
         {
             title: "Start It Up",
             description: "A web portal to connect, mentor, and support student startup teams.",
@@ -35,17 +42,6 @@ export const Projects = () => {
             imgUrl: projImg5,
             url: "https://egg-hunt-game.vercel.app/"
         },
-        {
-            title: "India Unveiled",
-            description: "Indian Culture & Heritage Website",
-            imgUrl: projImg2,
-            url: "https://india-unveiled.vercel.app/"
-        },
-        {
-            title: "MealMate",
-            description: "Hostel Mess Management System",
-            imgUrl: projImg4,
-        }
     ];
 
     return(

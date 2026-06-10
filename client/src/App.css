@@ -443,6 +443,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 40px 60px;
   position: relative;
+  margin-bottom: 60px;
 }
 
 .project h2 {

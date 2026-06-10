@@ -2,8 +2,8 @@ import { Container, Row, Col, Tab } from "react-bootstrap";
 import Nav from 'react-bootstrap/Nav'
 import {ProjectCards} from "./ProjectCards";
 import projImg1 from "../assets/img/projImg1.png";
-import projImg2 from "../assets/img/projImg2.png";
-import projImg4 from "../assets/img/projImg4.png";
+//import projImg2 from "../assets/img/projImg2.png";
+//import projImg4 from "../assets/img/projImg4.png";
 import projImg5 from "../assets/img/projImg5.png";
 import startitup from "../assets/img/startitup.png";
 import mindease from "../assets/img/mindease.png"

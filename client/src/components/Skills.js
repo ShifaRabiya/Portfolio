@@ -23,12 +23,12 @@ export const Skills = () => {
                   </Nav.Item>
                   <Nav.Item>
                     <Nav.Link eventKey="second" id="skills-tabs-tab-second">
-                      Backend
+                      Backend & Database
                     </Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
                     <Nav.Link eventKey="third" id="skills-tabs-tab-third">
-                      Database
+                      Programming Languages
                     </Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
@@ -41,22 +41,22 @@ export const Skills = () => {
                 <Tab.Content>
                   <Tab.Pane eventKey="first">
                     <div className="skills-list">
-                      React.js, JavaScript, HTML5, CSS3, TypeScript
-                    </div>
-                  </Tab.Pane>
-                  <Tab.Pane eventKey="second">
-                    <div className="skills-list">
-                      C, Python, Java, Node.js, Express.js
-                    </div>
-                  </Tab.Pane>
-                  <Tab.Pane eventKey="fourth">
-                    <div className="skills-list">
-                      MongoDB, MySQL
+                      HTML5, CSS3, JavaScript, React.js, TypeScript, Tailwind, Next.js
                     </div>
                   </Tab.Pane>
                   <Tab.Pane eventKey="third">
                     <div className="skills-list">
-                      Git, GitHub, VS Code, Figma, Canva
+                      C, Java, Python
+                    </div>
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="second">
+                    <div className="skills-list">
+                      Node.js, MongoDB
+                    </div>
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="fourth">
+                    <div className="skills-list">
+                      Git/GitHub, Vercel, Render, Figma, Canva, Jest
                     </div>
                   </Tab.Pane>
                 </Tab.Content>
